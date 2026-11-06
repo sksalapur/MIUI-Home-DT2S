@@ -16,17 +16,27 @@ Unlike heavy multi-purpose modding suites, this module is strictly single-purpos
 
 ---
 
-## Requirements
+## Requirements & Dependencies
+
+This module is an Xposed/LSPosed module and **requires an active LSPosed framework environment** to hook into `com.miui.home`.
+
+> [!IMPORTANT]
+> **LSPosed Framework Notice:**
+> The legacy [LSPosed repository](https://github.com/LSPosed/LSPosed) has been officially **archived** and is no longer actively maintained. For Android 12, 13, 14, and HyperOS, we strongly recommend using the actively maintained community fork:
+> - **[LSPosed Mod by mywalkb](https://github.com/mywalkb/LSPosed_mod)** (Supports Zygisk with Magisk, KernelSU, and APatch)
+>
+> Download the latest Zygisk release zip from the [LSPosed Mod Releases](https://github.com/mywalkb/LSPosed_mod/releases) page and flash it in your root manager.
 
 - **Device:** Xiaomi / Redmi / POCO running MIUI 13/14 or HyperOS (Android 12/13/14)
-- **Root Solution:** APatch, KernelSU, or Magisk
-- **Xposed Framework:** Zygisk LSPosed (v1.9.2+)
+- **Root Solution:** [APatch](https://github.com/bmax121/APatch), [KernelSU](https://github.com/tiann/KernelSU), or [Magisk](https://github.com/topjohnwu/Magisk) (v26+) with Zygisk enabled
+- **Xposed Framework:** [LSPosed Mod](https://github.com/mywalkb/LSPosed_mod) (v1.9.3+ recommended) or [Legacy LSPosed](https://github.com/LSPosed/LSPosed)
+- **Target Application:** System Launcher (`com.miui.home`)
 
 ---
 
 ## Installation
 
-1. Download [`MiuiHomeDoubleTap.apk`](MiuiHomeDoubleTap.apk) from this repository.
+1. Download [`MiuiHomeDoubleTap.apk`](https://github.com/sksalapur/MIUI-Home-DT2S/releases/latest) from the [Releases](https://github.com/sksalapur/MIUI-Home-DT2S/releases) section (or directly from this repository).
 2. Install the APK on your device.
 3. Open **LSPosed Manager** and enable **MIUI-Home-DT2S**.
 4. Set the scope to **System launcher (`com.miui.home`)**.
